@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MultiChurch - Cadastro</title>
+   <link rel="stylesheet" href="/styles/index.css">
+   <link rel="stylesheet" href="/styles/cadastro.css">
+</head>
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li class="dropdown">
+               <a>Tutorial</a>
+               <ul class="dropdown-content">
+                  <li><a href="/pages/tutoriais/som.html">Som</a></li>
+                  <li><a href="/pages/tutoriais/projecao.html">Projeção</a></li>
+                  <li><a href="/pages/tutoriais/transmissao.html">Transmissão</a></li>
+                  <li><a href="/pages/tutoriais/fotografia.html">Fotografia</a></li>
+               </ul>
+            </li>
+            <li><a href="/pages/cadastro.html">Cadastro</a></li>
+            <li><a href="/pages/escala.html">Escala</a></li>
+            <li><a href="/pages/to-do.html">A Fazeres</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <main class="form-container">
+      <form id="add-member-form">
+         <fieldset>
+            <legend>Cadastro</legend>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="member-sector">Setor:</label>
+            <select name="member-sector" id="member-sector" required>
+               <option value="som">Som</option>
+               <option value="projecao">Projeção</option>
+               <option value="transmissao">Transmissão</option>
+               <option value="fotografia">Fotografia</option>
+            </select>
+            <button type="submit">Cadastrar</button>
+         </fieldset>
+      </form>
+   </main>
+
+   <main class="list-container">
+      <h2>Membros Cadastrados</h2>
+
+      <label for="sector">Escolha um setor:</label>
+      <select name="sector" id="sector">
+         <option value="">Selecione um setor</option>
+         <option value="som">Som</option>
+         <option value="projecao">Projeção</option>
+         <option value="transmissao">Transmissão</option>
+         <option value="fotografia">Fotografia</option>
+      </select>
+
+      <ul id="members-list">
+         <!-- Lista de membros será populada aqui pelo script -->
+      </ul>
+   </main>
+</body>
+<script src="/scripts/cadastro.js"></script>
+</html>

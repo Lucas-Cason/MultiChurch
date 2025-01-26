@@ -1,0 +1,128 @@
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+}
+
+main.schedule-container {
+   width: 100%;
+   max-width: 600px;
+   padding: 20px;
+   box-sizing: border-box;
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin: 50px auto;
+}
+
+h1 {
+   font-size: 24px;
+   font-weight: bold;
+   color: #7B1FA2;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+label {
+   font-size: 16px;
+   margin-bottom: 8px;
+   display: block;
+   color: #333;
+}
+
+input[type="month"] {
+   width: 100%;
+   padding: 10px;
+   margin: 8px 0 16px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+select {
+   width: 100%;
+   padding: 10px;
+   margin: 8px 0 16px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+input[type="text"] {
+   width: 90%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 14px;
+   box-sizing: border-box;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+thead {
+   background-color: #9b28cc;
+   color: white;
+}
+
+th,
+td {
+   border: 1px solid #ccc;
+   padding: 10px;
+   text-align: center;
+   font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+   background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+   background-color: #f1f1f1;
+}
+
+button.save-schedule {
+   background-color: #9b28cc;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.3s;
+   display: block;
+   margin: 20px auto;
+   width: 100%;
+   max-width: 200px;
+}
+
+button.save-schedule:hover {
+   background-color: #D1A1FF;
+   transform: scale(1.05);
+}
+
+button.save-schedule:active {
+   transform: scale(1);
+}
+
+@media (max-width: 768px) {
+   main.schedule-container {
+      padding: 15px;
+   }
+
+   th,
+   td {
+      font-size: 14px;
+      padding: 8px;
+   }
+
+   input[type="text"] {
+      font-size: 12px;
+   }
+}

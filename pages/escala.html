@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MultiChurch - Escala</title>
+   <link rel="stylesheet" href="/styles/index.css">
+   <link rel="stylesheet" href="/styles/escala.css">
+</head>
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li class="dropdown">
+               <a>Tutorial</a>
+               <ul class="dropdown-content">
+                  <li><a href="/pages/tutoriais/som.html">Som</a></li>
+                  <li><a href="/pages/tutoriais/projecao.html">Projeção</a></li>
+                  <li><a href="/pages/tutoriais/transmissao.html">Transmissão</a></li>
+                  <li><a href="/pages/tutoriais/fotografia.html">Fotografia</a></li>
+               </ul>
+            </li>
+            <li><a href="/pages/cadastro.html">Cadastro</a></li>
+            <li><a href="/pages/escala.html">Escala</a></li>
+            <li><a href="/pages/to-do.html">A Fazeres</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main class="schedule-container">
+      <div class="schedule-form">
+         <h1>Escala de Trabalho</h1>
+
+         <label for="month-select">Selecione o mês:</label>
+         <input type="month" id="month-select" required>
+      
+         <label for="setor">Setor</label>
+         <select id="setor">
+            <option value="" disabled selected>Selecione o setor</option>
+            <option value="som">Som</option>
+            <option value="projecao">Projeção</option>
+            <option value="transmissao">Transmissão</option>
+            <option value="fotografia">Fotografia</option>
+         </select>
+      
+         <table id="schedule-table">
+            <thead>
+               <tr>
+                  <th>Data</th>
+                  <th>Manhã</th>
+                  <th>Noite</th>
+               </tr>
+            </thead>
+            <tbody id="schedule-table">
+               <!-- As datas dos domingos serão exibidas aqui -->
+            </tbody>
+         </table>
+      
+         <button class="save-schedule">Salvar Escala</button>
+      </div>
+   </main>
+</body>
+<script src="/scripts/escala.js"></script>
+</html>
