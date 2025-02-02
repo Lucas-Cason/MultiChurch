@@ -1,0 +1,65 @@
+.container-tarefas {
+   max-width: 800px;
+   width: 100%;
+   background-color: white;
+   padding: 20px;
+   margin: 20px auto;
+   border-radius: 10px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-tarefas h1 {
+   text-align: center;
+   color: #333;
+   font-size: 24px;
+   margin-bottom: 15px;
+}
+
+.container-tarefas ul {
+   list-style: none;
+   padding: 0;
+}
+
+.container-tarefas ul li {
+   background: #ffffff;
+   padding: 12px;
+   margin-bottom: 8px;
+   border-radius: 8px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid #ddd;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.container-tarefas select {
+   padding: 6px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   background-color: white;
+   font-size: 14px;
+   cursor: pointer;
+   min-width: 80px;
+   text-align: center;
+}
+
+@media (max-width: 600px) {
+   .container-tarefas {
+      max-width: 90%;
+      padding: 15px;
+   }
+
+   .container-tarefas h1 {
+      font-size: 20px;
+   }
+
+   .container-tarefas ul li {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .container-tarefas ul li select {
+      width: 100%;
+      margin-top: 5px;
+   }
+}
